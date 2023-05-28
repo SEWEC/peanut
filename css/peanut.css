@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+    scroll-behavior: smooth;
+    color: #111;
+    background-color:  	#f1f0eb;
+    position: relative;
+}
+
+
+#title-container {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes moveAndShrink {
+    100% {
+      left: 75%;
+      transform: scale(.5) translateX(-100%) translateY(-100%);
+    }
+}
+
+.animate {
+    position: absolute;
+    animation: moveAndShrink 1.5s ease-in-out forwards;
+}
+
+.container {
+    width: 50%;
+}
+
+.article {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.text{
+    margin-right: 50px;
+}
+
+.peanut{
+    max-height: 1100px;
+    max-width: 600px;
+}
+
+.spacer{
+    height: 100%;
+}
